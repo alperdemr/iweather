@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "weather": "url('/background.png')",
+        
       },
       colors: {
         "product": "#8FB2F5",

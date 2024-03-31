@@ -7,7 +7,7 @@ export default function Home() {
         <Logo />
         <div className="mt-[192px]  max-w-[311px] mx-auto  ">
           <div className=" flex flex-col gap-8">
-            <div className="text-center ">
+            <div className="text-center    ">
               <h1 className=" font-bold text-[20px] leading-7 text-base-white">
                 Welcome to <span className=" text-product">TypeWeather</span>
               </h1>
