@@ -30,7 +30,7 @@ const DetailsPage = () => {
               </p>
             </div>
           </div>
-          <div className=" absolute top-[144px] left-[175px]">
+          <div className=" absolute top-[144px] left-[175px] ">
             <Image src="/icons.svg" alt="icons" width={160} height={160} />
           </div>
         </div>

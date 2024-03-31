@@ -8,7 +8,7 @@ export default function Home() {
         <div className="mt-[192px]  max-w-[311px] mx-auto  ">
           <div className=" flex flex-col gap-8">
             <div className="text-center    ">
-              <h1 className=" font-bold text-[20px] leading-7 text-base-white">
+              <h1 className=" text-heading-md text-base-white">
                 Welcome to <span className=" text-product">TypeWeather</span>
               </h1>
               <p className=" font-normal text-[14px] leading-[19.6px] text-base-200">

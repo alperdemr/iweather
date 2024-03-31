@@ -11,7 +11,7 @@ const Daily = () => {
         <p className=" text-base-100 font-bold text-[14px] leading-[19.6px] text-center">
           32ºc
         </p>
-        <p className=" text-base-400 text-[14px] text-center leading-[19.6px] text-center">
+        <p className=" text-base-400 text-[14px]  leading-[19.6px] text-center">
           26ºc
         </p>
       </div>
