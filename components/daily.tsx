@@ -1,18 +1,36 @@
 import Image from "next/image";
 
-const Daily = () => {
+interface DailyProps {
+  day: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  max: number;
+  min: number;
+}
+
+const Daily: React.FC<DailyProps> = ({
+  day,
+  src,
+  alt,
+  width,
+  height,
+  max,
+  min,
+}) => {
   return (
     <div className="flex flex-col gap-1 items-center">
       <p className=" font-bold text-[14px] leading-[19.6px] text-base-200">
-        Mon
+        {day}
       </p>
-      <Image src={"/daily.svg"} alt="daily" width={56} height={56} />
+      <Image src={src} alt={alt} width={width} height={height} />
       <div>
         <p className=" text-base-100 font-bold text-[14px] leading-[19.6px] text-center">
-          32ºc
+          {max}
         </p>
         <p className=" text-base-400 text-[14px]  leading-[19.6px] text-center">
-          26ºc
+          {min}
         </p>
       </div>
     </div>

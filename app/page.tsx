@@ -4,6 +4,7 @@ import { useState } from "react";
 import useDebounce from "@/hooks/useDebounce";
 import useWeather from "@/hooks/useWeather";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const [search, setSearch] = useState<string>("");
@@ -46,9 +47,12 @@ export default function Home() {
               {isError && <p>Error</p>}
               {weather && (
                 <div>
-                  <h2>
+                  <Link
+                    href={`/details/${weather?.id}`}
+                    className=" py-4 px-5 w-full absolute top-16 rounded-lg bg-base-500 text-md text-base-white font-normal"
+                  >
                     {weather.name} - {weather.sys.country}
-                  </h2>
+                  </Link>
                 </div>
               )}
             </div>
